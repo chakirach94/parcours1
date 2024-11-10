@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unité Foragère Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- School Logo -->
+        <img src="https://conserveterra.org/wp-content/uploads/Logo-institut-agronomique_lat_2.jpg" alt="School Logo" class="school-logo">
+
+        <h1>Unité Foragère Calculator</h1>
+
+        <!-- Dashboard Section -->
+        <div class="dashboard">
+            <p>Total Races: <span id="totalRaces">0</span></p>
+            <p>Total Unité Foragère: <span id="ufResult">0</span></p>
+        </div>
+
+        <!-- Add Race Section -->
+        <div class="add-race-container">
+            <label for="animalType">Choose Animal Type:</label>
+            <select id="animalType">
+                <option value="ovin">Ovins</option>
+                <option value="caprin">Caprins</option>
+                <option value="bovin">Bovins</option>
+            </select>
+            <button onclick="addRaceForm()">Add Race</button>
+        </div>
+
+        <!-- Race Forms Container -->
+        <div id="raceForms"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

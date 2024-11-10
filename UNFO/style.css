@@ -1,0 +1,225 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f9fc;
+    overflow: hidden;
+}
+
+.container {
+    width: 450px; /* Slightly wider */
+    max-height: 90vh;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* School Logo */
+.school-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Dashboard */
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f0f7fa;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Scrollable raceForms container */
+#raceForms {
+    max-height: 50vh;
+    overflow-y: auto;
+    width: 100%;
+    padding-right: 10px;
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-top: 15px;
+    text-align: left;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+select:focus {
+    border-color: #4CAF50;
+}
+
+.add-race-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+    z-index: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #3e8e41;
+    transform: scale(0.95);
+}
+
+.race-form {
+    background-color: #f0f7fa;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.race-form h3 {
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.race-form h4 {
+    color: #4CAF50;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.race-form .button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.race-form .update-button {
+    background-color: #008CBA;
+}
+
+.race-form .update-button:hover {
+    background-color: #007BB5;
+}
+
+.race-form .delete-button {
+    background-color: #ff4d4d;
+}
+
+.race-form .delete-button:hover {
+    background-color: #ff3333;
+}
+
+.race-form .race-uf {
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Smaller and Round Minimize Button */
+.minimize-btn {
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 5px;
+    border-radius: 50%; /* Makes the button round */
+    width: 24px; /* Fixed width and height to ensure it stays circular */
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.minimize-btn:hover {
+    background-color: #ccc;
+    color: #333;
+}
+.race-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.race-image {
+    width: 70px; /* Increased image size */
+    height: 70px; /* Increased image size */
+    border-radius: 50%; /* Makes the image round */
+    border: 1px solid black; /* 1px black border */
+    object-fit: cover; /* Ensures the image covers the circle */
+    margin-left: 10px; /* Adds some space between the title and image */
+}
